@@ -7,7 +7,7 @@ while True:
     print("1) Guardar")
     print("2) Buscar")
     print("3) Certificados")
-    print("0) Salie")
+    print("0) Salir")
     opcion = int(input("Selecciones : "))
 
     #Validamos la opcion
@@ -20,5 +20,13 @@ while True:
         fu.printv("Buscar")
     elif opcion==3:
         fu.printv("Certificados")
-    else:
-        fu.printr("Opcion no valida")
+        print("1) Criticas")
+        print("2) Detalles")
+        cert = int(input("Seleccione : "))
+        if cert ==1:
+            fu.printv("Certificado Criticas") 
+        elif cert ==2:
+            fu.printv("Certificado detalle de venta")
+        else:
+            fu.printr("Opcion no valida")
+        fu.printr("Opcion no valida x")
