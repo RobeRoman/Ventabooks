@@ -1,4 +1,4 @@
-import Funciones as fu
+import Funcionesventa as fu
 
 while True:
     fu.limpiarpantalla()
@@ -16,6 +16,8 @@ while True:
         break
     elif opcion==1:
         fu.printv("Guardar")
+        cod = int(input("Ingrese codigo : "))
+        ti = input("Ingrese titulo : ")
     elif opcion==2:
         fu.printv("Buscar")
     elif opcion==3:
@@ -30,3 +32,4 @@ while True:
         else:
             fu.printr("Opcion no valida")
         fu.printr("Opcion no valida x")
+
